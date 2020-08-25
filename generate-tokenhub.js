@@ -24,8 +24,8 @@ program.option("--rewardUpperLimit <rewardUpperLimit>",
     "rewardUpperLimit",
     "1e18");
 
-program.option("--maxGasForCallingBEP2E <maxGasForCallingBEP2E>",
-    "maxGasForCallingBEP2E",
+program.option("--maxGasForCallingBEP40 <maxGasForCallingBEP40>",
+    "maxGasForCallingBEP40",
     "50000");
 
 program.option("--maxGasForTransferringBNB <maxGasForTransferringBNB>",
@@ -41,7 +41,7 @@ program.parse(process.argv);
 const data = {
     initRelayFee: program.initRelayFee,
     rewardUpperLimit: program.rewardUpperLimit,
-    maxGasForCallingBEP2E: program.maxGasForCallingBEP2E,
+    maxGasForCallingBEP40: program.maxGasForCallingBEP40,
     maxGasForTransferringBNB: program.maxGasForTransferringBNB,
     mock: program.mock,
 };
